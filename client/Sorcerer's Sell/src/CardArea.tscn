@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/HandLeft.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/HandRight.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Card.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/CardCapture.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 582.313, 10 )
+
+[node name="CardArea" type="Node2D"]
+
+[node name="HandRight" parent="." instance=ExtResource( 2 )]
+position = Vector2( 180, 50 )
+
+[node name="HandLeft" parent="." instance=ExtResource( 1 )]
+position = Vector2( -200, 50 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 30
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -221.093, -386.326, -260.778, 107.356, 267.826, 104.181, 164.645, -402.2, 363.07, -400.613, 439.266, 250.222, -471.903, 218.474, -427.455, -391.088 )
+
+[node name="CardCapture" type="Area2D" parent="."]
+position = Vector2( 8.97974, -565.721 )
+collision_mask = 31
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CardCapture"]
+position = Vector2( -9.53516, -244.736 )
+shape = SubResource( 1 )
+
+[node name="Cards" type="Node2D" parent="."]
+
+[node name="Card" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -16.6703, -315.123 )
+
+[node name="Card2" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -82.0767, -362.692 )
+
+[node name="Card3" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( 70.1418, -368.638 )
+
+[node name="Card4" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -7.15668, -406.692 )
+
+[node name="Card5" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -72.563, -454.261 )
+
+[node name="Card6" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( 79.6555, -460.206 )
+
+[node name="Card7" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -7.15668, -510.153 )
+
+[node name="Card8" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( -72.563, -557.722 )
+
+[node name="Card9" parent="Cards" instance=ExtResource( 3 )]
+position = Vector2( 79.6555, -563.667 )
+
+[connection signal="body_entered" from="CardCapture" to="CardCapture" method="_on_CardCapture_body_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/NKM-G-25-31-559286601-0-226767-24-48-2-2898-50-0-5-162-34-538-90-181-5-181-0-0-0.wav-d52095b48da7d063ba703e29018f22aa.sample"
+
+[deps]
+
+source_file="res://assets/NKM-G-25-31-559286601-0-226767-24-48-2-2898-50-0-5-162-34-538-90-181-5-181-0-0-0.wav"
+dest_files=[ "res://.import/NKM-G-25-31-559286601-0-226767-24-48-2-2898-50-0-5-162-34-538-90-181-5-181-0-0-0.wav-d52095b48da7d063ba703e29018f22aa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
