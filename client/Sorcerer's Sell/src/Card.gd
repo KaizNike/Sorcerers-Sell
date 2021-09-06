@@ -14,7 +14,7 @@ var card_type = "raven"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process_input(true)
-	print(layer)
+#	print(layer)
 	pass # Replace with function body.
 
 
@@ -79,5 +79,5 @@ func _change_layer(Layer):
 			z_index = -3
 			
 	layer = collision_layer
-	print(collision_mask)
+#	print(collision_mask)
 		
