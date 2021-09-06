@@ -30,32 +30,33 @@ position = Vector2( -9.53516, -244.736 )
 shape = SubResource( 1 )
 
 [node name="Cards" type="Node2D" parent="."]
+position = Vector2( -5.65686, -588.313 )
 
 [node name="Card" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -16.6703, -315.123 )
+position = Vector2( -3.97108, 143.636 )
 
 [node name="Card2" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -82.0767, -362.692 )
+position = Vector2( -69.3775, 96.0668 )
 
 [node name="Card3" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( 70.1418, -368.638 )
+position = Vector2( 82.841, 90.1208 )
 
 [node name="Card4" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -7.15668, -406.692 )
+position = Vector2( 5.54254, 52.0668 )
 
 [node name="Card5" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -72.563, -454.261 )
+position = Vector2( -59.8638, 4.49786 )
 
 [node name="Card6" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( 79.6555, -460.206 )
+position = Vector2( 92.3547, -1.44714 )
 
 [node name="Card7" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -7.15668, -510.153 )
+position = Vector2( 5.54254, -51.3942 )
 
 [node name="Card8" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( -72.563, -557.722 )
+position = Vector2( -59.8638, -98.9631 )
 
 [node name="Card9" parent="Cards" instance=ExtResource( 3 )]
-position = Vector2( 79.6555, -563.667 )
+position = Vector2( 92.3547, -104.908 )
 
 [connection signal="body_entered" from="CardCapture" to="CardCapture" method="_on_CardCapture_body_entered"]
